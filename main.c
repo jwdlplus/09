@@ -1,19 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define SIZE 5
 
 int main(int argc, char *argv[])
 {
     int i;
-    int testScore[5];
+    int grade[SIZE];
+    printf("%i명 점수를 입력하세요.\n", SIZE);
     
-    testScore[0] = 10;
-    testScore[1] = 20;
-    testScore[2] = 30;
-    testScore[3] = 40;
-    testScore[4] = 50;
+    for(i=0;i<SIZE;i++)
+       scanf("%d", &grade[i]);
     
-    for (i=0;i<5;i++)
-        printf("grade[%i] = %i\n", i, testScore[i]);
+    for(i=0;i<SIZE;i++)
+       printf("grade[%i] = %i\n", i, grade[i]); 
   
     system("PAUSE");	
     return 0;
